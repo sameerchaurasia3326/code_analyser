@@ -165,10 +165,9 @@ python interactive.py
 
 ## 🚧 Roadmap
 
-- [ ] Support for JavaScript, TypeScript, Java, Go
+- [ ] Support for JavaScript, Java, Go
 - [ ] Code clustering and grouping
 - [ ] Question-answering over codebase
-- [ ] FastAPI HTTP endpoints
 - [ ] Web UI interface
 - [ ] Code similarity visualization
 - [ ] Integration with IDEs
