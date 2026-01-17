@@ -90,18 +90,20 @@ for result in results:
 ```
 code_analyser/
 ├── src/
-│   ├── models/          # Data models for code units
-│   ├── parser/          # Code parsers (Python AST)
-│   ├── embeddings/      # Gemini embedding service & vector store
-│   ├── indexer/         # Code indexing orchestration
-│   ├── search/          # Semantic search engine
-│   ├── cli/             # Command-line interface
-│   └── config.py        # Configuration management
-├── tests/               # Unit tests
-├── examples/            # Example usage and sample code
-├── pyproject.toml       # Project configuration
-└── .env.example         # Environment variables template
+│   ├── cli/            # Command-line interface (main.py)
+│   ├── embeddings/     # Vector embedding logic (Gemini/OpenAI)
+│   ├── generation/     # AI Summarization Service
+│   ├── indexer/        # Code crawling & indexing orchestration
+│   ├── models/         # Pydantic data models (CodeUnit)
+│   ├── parser/         # AST Parsers (Python, JS, Go, Java)
+│   ├── search/         # Semantic Search Engine & Intent Detection
+│   ├── utils/          # Helpers (Logger, Metadata Extractor)
+│   └── config.py       # Global Configuration (Env vars)
+├── interactive.py      # Terminal UI loop
+├── .env.example        # Template for API keys
+└── pyproject.toml      # Project dependencies
 ```
+
 
 ## 🔧 How It Works
 
@@ -127,7 +129,6 @@ The system understands the **meaning** and finds relevant code even if it uses d
 
 - **Google Gemini**: Embedding generation (embedding-001 model)
 - **ChromaDB**: Vector database for storing embeddings
-- **FastAPI**: HTTP API framework
 - **Click**: CLI framework
 - **Rich**: Beautiful terminal output
 - **Pydantic**: Data validation
@@ -158,13 +159,9 @@ SIMILARITY_THRESHOLD=0.7
 
 Run the test script:
 ```bash
-python test_analyser.py
+python interactive.py
 ```
 
-Run unit tests (coming soon):
-```bash
-pytest tests/
-```
 
 ## 🚧 Roadmap
 
