@@ -1,5 +1,6 @@
 🚀 Real-World Use Cases for Semantic Code Analysis
-This document outlines the high-impact scenarios where this system solves critical business problems.
+  
+  This document outlines the high-impact scenarios where this system solves critical business problems.
 
 1. 🎓 Onboarding New Developers (The "Day 1" Problem)
 Problem: New joiners take weeks to become productive because they don't know the codebase structure. They constantly interrupt senior developers with questions like "Where is the login logic?" Solution:
